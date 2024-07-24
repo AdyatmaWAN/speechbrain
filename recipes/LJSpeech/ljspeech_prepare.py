@@ -160,6 +160,7 @@ def prepare_ljspeech(
         return
 
     # Additional check to make sure metadata.csv and wavs folder exists
+    print(meta_csv)
     assert os.path.exists(meta_csv), "metadata.csv does not exist"
     assert os.path.exists(wavs_folder), "wavs/ folder does not exist"
 
